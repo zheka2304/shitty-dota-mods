@@ -1,4 +1,4 @@
 
-"./venv/scripts/python.exe" assemble-overrides.py
+"./venv/scripts/python.exe" script/assemble-overrides.py
 
 pause
