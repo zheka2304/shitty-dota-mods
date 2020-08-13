@@ -1,0 +1,75 @@
+{
+	"vpk_path": "C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota/pak01_dir.vpk",
+	"mods_path": "C:/Program Files (x86)/Steam/steamapps/common/dota 2 beta/game/dota_mods/",
+	"default_sound_header": "sounds/music/valve_dota_001/music/killed.vsnd_c",
+	"overrides": [
+		{
+			"file": "src/the_world_full.mp3",
+			"apply": [
+				"sounds/weapons/hero/faceless_void/chronosphere.vsnd_c",
+				"sounds/weapons/hero/faceless_void/chronosphere_immortal.vsnd_c"
+			]
+		},
+		
+		{
+			"file": "src/terraria_boss_2.mp3",
+			"apply": [
+				"sounds/music/valve_dota_001/music/battle_01.vsnd_c",
+				"sounds/music/valve_dota_001/music/battle_02.vsnd_c",
+				"sounds/music/valve_dota_001/music/battle_03.vsnd_c"
+			]
+		},
+		
+		{
+			"file": "src/terraria_moon_lord.mp3",
+			"apply": [
+				"sounds/music/valve_dota_001/music/roshan.vsnd_c"
+			]
+		},
+		
+		{
+			"file": "src/ponasenkov_amp.mp3",
+			"apply": [
+				"sounds/weapons/hero/skeleton_king/reincarnate.vsnd_c",
+				"sounds/weapons/hero/skeleton_king/reincarnate_arcana.vsnd_c"
+			
+			]
+		},
+		
+		{
+			"file": "src/vi_ka_amp.mp3",
+			"apply": [
+				"sounds/music/valve_dota_001/stingers/dire_win.vsnd_c",
+				"sounds/music/valve_dota_001/stingers/radiant_win.vsnd_c"
+			]
+		},
+		
+		{
+			"file": "src/bruh.mp3",
+			"apply": [
+				"sounds/weapons/hero/sniper/duck_target.vsnd_c"
+			]
+		},
+		
+		{
+			"file": "src/nikach_1_via_stonegaze.mp3",
+			"apply": [
+				"sounds/weapons/hero/medusa/stonegaze.vsnd_c"
+			]
+		},
+		
+		{
+			"file": "src/muda_muda.mp3",
+			"apply": [
+				"sounds/weapons/hero/windrunner/focus_fire.vsnd_c"
+			]
+		},
+		
+		{
+			"file": "src/Yoshikage_Kira_modified.mp3",
+			"apply": [
+				"sounds/music/valve_dota_001/music/killed.vsnd_c"
+			]
+		}
+	]
+}
