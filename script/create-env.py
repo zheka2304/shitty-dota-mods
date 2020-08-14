@@ -26,7 +26,11 @@ execute(["python", "-m", "venv", "virtual-env"], message="creating virtual envir
 
 os.chdir("virtual-env/Scripts")
 execute(["activate.bat"])
-execute(["pip3.exe" if os.path.isfile("pip3.exe") else "pip.exe", "install", "-r", "../../script/requirements.txt"], "installing requirements...")
+
+pip = "pip3.exe" if os.path.isfile("pip3.exe") else "pip.exe"
+execute([pip, "install", "--upgrade", "pip"], "upgrading pip...")
+execute([pip, "install", "-r", "../../script/requirements.txt"], "installing requirements...")
+
 os.chdir("../..")
 
 print("\nDONE!")
