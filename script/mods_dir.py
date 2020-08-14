@@ -40,8 +40,14 @@ def setup_mods_dir():
 	if not os.path.isdir(mods_dir):
 		os.makedirs(mods_dir)
 	
+	
 def get_mods_dir():
 	return mods_dir
+	
 
+def get_vpk_dir():
+	steamapps_dir = get_user_settings()["steamapps_path"]
+	return os.path.join(steamapps_dir, "common/dota 2 beta/game/dota/pak01_dir.vpk")
+	
 	
 setup_mods_dir()

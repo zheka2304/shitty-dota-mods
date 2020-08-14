@@ -7,7 +7,7 @@ import json
 import subprocess
 import struct	
 
-from mods_dir import get_mods_dir
+from mods_dir import get_mods_dir, get_vpk_dir
 from mutagen.mp3 import MP3
 
 
@@ -79,8 +79,8 @@ remove_temp_dirs()
 with open("overrides.json", "r") as overrides_file:
 	config = json.loads(overrides_file.read())
 	
-if "vpk_path" in config:
-	set_vpk_path(config["vpk_path"])
+set_vpk_path(get_vpk_dir())
+	
 if "default_sound_header" in config:
 	globals["default_sound_header"] = config["default_sound_header"]
 
@@ -100,7 +100,9 @@ if "overrides" in config:
 							out_file.write(bytes)
 	
 	print("assemble vpk")
-	subprocess.call(["assemble-overrides-pack-vpk.bat"])
+	os.chdir("vpk")
+	subprocess.run(["make_vpk.bat"])
+	os.chdir("..")
 	
 	mods_dir = get_mods_dir()
 	print("copy vpk to:", mods_dir)
